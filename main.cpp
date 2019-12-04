@@ -1,3 +1,7 @@
+/*
+ * Alex Chheng
+ * CECS 282, Lab 9
+ */
 #include <iostream>
 
 int main() {

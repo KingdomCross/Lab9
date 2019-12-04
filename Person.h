@@ -5,8 +5,10 @@
 #ifndef LAB9_PERSON_H
 #define LAB9_PERSON_H
 
-
+#include <iostream>
 class Person {
+private:
+    string lastname;
 
 };
 
