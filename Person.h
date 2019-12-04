@@ -6,14 +6,26 @@
 #define LAB9_PERSON_H
 
 #include <iostream>
+#include <set>
 
 using namespace std;
 
 class Person {
 private:
-    string lastname;
-    string firstname;
+    string lastName;
+    string firstName;
 public:
+    Person() : lastName("blank"),
+               firstName("blank")
+    {  }
+    Person(string lname, string fname) : lastName(lname), firstName(fname){}
+    friend bool operator<(const Person&, const Person&);
+    friend bool operator==(const Person&, const Person&);
+
+    void display() const   // display person's data
+    {
+        cout << endl << lastName << ",\t" << firstName;
+    }
 };
 
 
