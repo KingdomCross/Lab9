@@ -6,10 +6,14 @@
 #define LAB9_PERSON_H
 
 #include <iostream>
+
+using namespace std;
+
 class Person {
 private:
     string lastname;
-
+    string firstname;
+public:
 };
 
 
