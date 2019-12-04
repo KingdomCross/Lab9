@@ -5,8 +5,11 @@
 #ifndef LAB9_PERSON_H
 #define LAB9_PERSON_H
 
+// uses a multiset to hold person objects
+#pragma warning (disable:4786)  // for set (Microsoft only)
 #include <iostream>
 #include <set>
+#include <string>
 
 using namespace std;
 

@@ -4,6 +4,7 @@
 
 #include "Person.h"
 
+// operator < for person class
 bool operator<(const Person& p1, const Person& p2)
 {
     if(p1.lastName == p2.lastName)
