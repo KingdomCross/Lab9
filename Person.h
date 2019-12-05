@@ -6,7 +6,6 @@
 #define LAB9_PERSON_H
 
 // uses a multiset to hold person objects
-#pragma warning (disable:4786)  // for set (Microsoft only)
 #include <iostream>
 #include <set>
 #include <string>
@@ -22,13 +21,13 @@ public:
                firstName("blank")
     {  }
     Person(string lname, string fname) : lastName(lname), firstName(fname){}
-    friend bool operator<(const Person&, const Person&);
-    friend bool operator==(const Person&, const Person&);
 
     void display() const   // display person's data
     {
         cout << endl << lastName << ",\t" << firstName;
     }
+
+    void compareOperation(string s1, string s2);
 };
 
 

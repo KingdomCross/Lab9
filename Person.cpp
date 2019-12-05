@@ -4,16 +4,14 @@
 
 #include "Person.h"
 
-// operator < for person class
-bool operator<(const Person& p1, const Person& p2)
-{
-    if(p1.lastName == p2.lastName)
-        return (p1.firstName < p2.firstName) ? true : false;
-    return (p1.lastName < p2.lastName) ? true : false;
-}
-// operator == for person class
-bool operator==(const Person& p1, const Person& p2)
-{
-    return (p1.lastName == p2.lastName &&
-            p1.firstName == p2.firstName ) ? true : false;
+void compareOperation(string s1, string s2) {
+    // returns a value < 0 (s1 is smaller then s2)
+    if ((s1.compare(s2)) < 0)
+        cout << s1 << " is smaller than " << s2 << endl;
+
+    // returns 0(s1, is being comapared to itself)
+    if ((s1.compare(s1)) == 0)
+        cout << s1 << " is equal to " << s1 << endl;
+    else
+        cout << "Strings didn't match ";
 }
